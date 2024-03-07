@@ -1,10 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
 /.pnp
 .pnp.js
-.yarn/install-state.gz
 
 # testing
 /coverage
@@ -26,11 +24,14 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
-.env*.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local   
 
-# vercel
-.vercel
+/node_modules/
+/package-lock.json
+/.eslintrc.json
+/*.d.ts
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+
